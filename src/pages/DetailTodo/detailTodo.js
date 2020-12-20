@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
-import './App.scss';
-import InputForm from './Components/InputForm';
-import EditForm from './Components/EditForm';
+import './detailTodo.scss';
+import { EditForm, InputForm, ListItem } from '../../components/molecules/molecules';
 import useDoubleClick from 'use-double-click';
 import styled, { ThemeProvider } from 'styled-components';
 

@@ -33,14 +33,14 @@ const Input = styled.input`
   }
 `;
 
-function EditForm(props) {
-    console.log(props, 'props');
-    return (
-        <form className="new-value" onSubmit={props.onSubmit}>
-            <Input value={props.changeValue} onChange={props.onValueChanged} />
-            <Button onClick={props.edit}> Edit </Button>
-        </form>
-    )
+const EditForm = (props) => {
+  console.log(props, 'props');
+  return (
+    <form className="new-value" onSubmit={props.onSubmit}>
+      <Input value={props.changeValue} onChange={props.onValueChanged} />
+      <Button onClick={props.edit}> Edit </Button>
+    </form>
+  )
 }
 
 export default EditForm;

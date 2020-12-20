@@ -33,13 +33,13 @@ const Input = styled.input`
   }
 `;
 
-function InputForm(props) {
-    return (
-        <form className="new-value" onSubmit={props.submit}>
-            <Input placeholder="add a new todo..." value={props.value} onChange={(event) => props.onValueChange(event.target.value)} />
-            <Button disabled={props.disabled}> Add </Button>
-        </form>
-    )
+const InputForm = (props) => {
+  return (
+    <form className="new-value" onSubmit={props.submit}>
+      <Input placeholder="add a new todo..." value={props.value} onChange={(event) => props.onValueChange(event.target.value)} />
+      <Button disabled={props.disabled}> Add </Button>
+    </form>
+  )
 }
 
 export default InputForm;

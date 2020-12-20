@@ -13,13 +13,13 @@ const Login = () => {
             <div className="right">
                 <p className="title">Login</p>
                 <Gap height={18} />
-                <Input label="Email" placeholder="Email" />
+                <Input label="Email" placeholder="Email" value="admin@todolist.com" />
                 <Gap height={18} />
-                <Input label="Password" placeholder="Password" />
+                <Input label="Password" placeholder="Password" value="********" />
                 <Gap height={20} />
-                <Button title="Login" onClick={() => history.push('/')} />
+                <Button title="Login" onClick={() => history.push('/mainApp')} />
                 <Gap height={100} />
-                <Link title="Belum Punya Akun, Silahkan Datar." onClick={() => history.push('/register')} />
+                <Link title="Don't have an account yet, please register." onClick={() => history.push('/register')} />
             </div>
         </div>
     )

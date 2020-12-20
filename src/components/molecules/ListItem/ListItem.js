@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ListItem(props) {
+const ListItem = (props) => {
     return (
         <ul className="list-item">
             <li className="fas fa-check" onDoubleClick={props.edit}> {props.name} </li>
